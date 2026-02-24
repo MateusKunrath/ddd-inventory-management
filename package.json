@@ -1,0 +1,31 @@
+{
+  "name": "04-ddd-e-clean-architecture-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateusKunrath/ddd-inventory-management.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MateusKunrath/ddd-inventory-management/issues"
+  },
+  "homepage": "https://github.com/MateusKunrath/ddd-inventory-management#readme",
+  "devDependencies": {
+    "@faker-js/faker": "10.3.0",
+    "@rocketseat/eslint-config": "2.2.2",
+    "@types/node": "25.3.0",
+    "eslint": "8.57.1",
+    "eslint-plugin-vitest-globals": "1.5.0",
+    "typescript": "5.9.3",
+    "vite-tsconfig-paths": "6.1.1",
+    "vitest": "3.2.4"
+  }
+}
