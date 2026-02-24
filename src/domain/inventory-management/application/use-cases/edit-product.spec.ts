@@ -1,15 +1,15 @@
 import { InMemoryProductsRepository } from 'test/repositories/in-memory-products-repository'
-import { CreateProductUseCase } from './create-product'
 import { makeProduct } from 'test/factories/make-product'
 import { UniqueEntityId } from '@/core/entities/unique-entity-id'
+import { EditProductUseCase } from './edit-product'
 
 let inMemoryProductsRepository: InMemoryProductsRepository
-let sut: CreateProductUseCase
+let sut: EditProductUseCase
 
 describe('Edit product use case', () => {
   beforeEach(() => {
     inMemoryProductsRepository = new InMemoryProductsRepository()
-    sut = new CreateProductUseCase(inMemoryProductsRepository)
+    sut = new EditProductUseCase(inMemoryProductsRepository)
   })
 
   it('should be able to create a new product', async () => {
@@ -18,6 +18,7 @@ describe('Edit product use case', () => {
     await inMemoryProductsRepository.create(newProduct)
 
     await sut.execute({
+      productId: 'product-1',
       description: 'Camiseta',
       size: 'M',
       color: 'Preta',
